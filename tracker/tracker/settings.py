@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--q9dns!=!53)6yfuj#7e$$e%2j9g9k^mt*g*qgye!j9!(pafs0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -119,7 +119,10 @@ USE_I18N = True
 
 USE_TZ = True
 
+# login 
 
+LOGIN_REDIRECT_URL = 'tracker-dashboard'
+LOGIN_URL = 'login'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
