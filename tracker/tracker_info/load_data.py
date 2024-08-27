@@ -4,7 +4,7 @@ from django.conf import settings
 from .models import TrackingDetails
 def lookup_hhid(hhid):
     
-    file = os.path.join(settings.MEDIA_ROOT,'trackings.xlsx')
+    file = os.path.join(settings.MEDIA_ROOT,'tracking4.xlsx')
     
     data = pd.read_excel(file)
     print(data.columns)
@@ -26,10 +26,8 @@ def export_data(filename):
     export_df.to_excel(filename,index=False)
     
 def load_users():
-    
-    df = pd.read_excel(r'C:\Users\user\Music\survey_tracker\tracker\tracker_info\users.xlsx',sheet_name='KAP F-D Final Team')
-    
-    return df
+    pass
+   
     
 
     
